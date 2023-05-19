@@ -1,2 +1,1 @@
-# Jetaime
-Je'taime Chicken
+Jetaime Chicken
