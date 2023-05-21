@@ -1,3 +1,29 @@
 {
-  "extends": "next/core-web-vitals"
+  "root": true, // Specifies that this is the root configuration file
+  "parser": "@typescript-eslint/parser", // Specifies the parser for TypeScript files
+  "plugins": ["@typescript-eslint", "prettier"], // Specifies the ESLint plugins to use
+  "parserOptions": {
+    "project": "./tsconfig.json", // Specifies the TypeScript project configuration file
+    "createDefaultProgram": true // Creates a default TypeScript program when parsing
+  },
+  "env": {
+    "browser": true, // Enables browser global variables such as 'document' and 'window'
+    "node": true, // Enables Node.js global variables and Node.js scoping
+    "es6": true // Enables ES6 global variables and ES6 features
+  },
+  "ignorePatterns": ["node_modules/"], // Specifies folders or files to ignore during linting
+  "extends": [
+    "airbnb", // Extends the Airbnb style guide rules
+    "airbnb-typescript", // Extends the Airbnb style guide rules for TypeScript
+    "airbnb/hooks", // Extends the Airbnb style guide rules for React hooks
+    "next/core-web-vitals", // Extends Next.js core web vitals rules
+    "plugin:@typescript-eslint/recommended", // Extends the recommended TypeScript rules
+    "plugin:prettier/recommended", // Extends the rules to enable Prettier integration
+    "prettier" // Disables ESLint rules that conflict with Prettier
+  ],
+  "rules": {
+    "react/react-in-jsx-scope": "off", // Turns off the requirement to import 'React' in JSX
+    "react/jsx-filename-extension": ["warn", { "extensions": [".ts", ".tsx"] }], // Allows .ts and .tsx file extensions for JSX files
+    "no-useless-catch": "off" // Turns off the rule that disallows unnecessary 'catch' clauses
+  }
 }
