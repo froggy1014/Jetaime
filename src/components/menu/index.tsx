@@ -2,7 +2,7 @@ import React from 'react';
 
 const Menu = () => {
   return (
-    <section className='scroll h-screen w-full snap-center	snap-normal bg-orange-200'>
+    <section className='h-screen w-full snap-center	snap-always bg-orange-200'>
       Menu
     </section>
   );

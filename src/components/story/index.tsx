@@ -2,7 +2,7 @@ import React from 'react';
 
 const Story = () => {
   return (
-    <section className='scroll h-screen w-full snap-center	snap-normal bg-amber-200'>
+    <section className='h-screen w-full snap-center snap-always bg-amber-200'>
       story
     </section>
   );
