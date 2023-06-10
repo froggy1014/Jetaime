@@ -35,3 +35,52 @@ export const slideIn = (
     },
   },
 });
+
+export const fadeIn = (
+  type: 'spring' | 'tween',
+  delay: number,
+  duration: number
+) => ({
+  hidden: {
+    scale: 0,
+    opacity: 0,
+  },
+  show: {
+    scale: 1,
+    opacity: 1,
+    transition: {
+      type,
+      delay,
+      duration,
+      ease: 'easeOut',
+    },
+  },
+  exit: {
+    scale: 0,
+    opacity: 0,
+    transition: {
+      delay: 0.3,
+    },
+  },
+});
+
+export const modalSlideUp = {
+  hidden: {
+    y: '100%',
+    opacity: 0,
+  },
+  show: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      type: 'spring',
+      delay: 0.5,
+      duration: 0.5,
+      ease: 'easeOut',
+    },
+  },
+  exit: {
+    y: '100%',
+    opacity: 0,
+  },
+};

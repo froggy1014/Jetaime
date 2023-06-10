@@ -5,9 +5,12 @@ import Logo from '@public/svg/Logo.svg';
 import CategoryButton from '@src/components/common/CategoryButton';
 import { slideIn, springUp } from '@src/utils/motion';
 import { motion } from 'framer-motion';
+import { useState } from 'react';
+import ChatModal from '../common/ChatModal';
 // import Image from 'next/image';
 
 const Main = () => {
+  const [open, setOpen] = useState<boolean>(false);
   return (
     <motion.section
       initial='hidden'
@@ -35,11 +38,14 @@ const Main = () => {
           type='button'
           className='mx-2 h-10 w-11/12 rounded-full bg-white text-gray-400 shadow-lg'
           variants={slideIn('right', 'spring', 0.5, 1)}
+          onClick={() => setOpen(!open)}
         >
           무엇이든 물어보세요.
         </motion.button>
         <ChevronDown className='animate-bounce' />
       </motion.div>
+
+      <ChatModal open={open} setOpen={setOpen} />
     </motion.section>
   );
 };
