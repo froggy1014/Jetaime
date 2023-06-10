@@ -1,8 +1,11 @@
-import { Inter } from 'next/font/google';
+import { Dancing_Script } from 'next/font/google';
 import '../styles/reset.css';
 import '../styles/globals.css';
 
-const inter = Inter({ subsets: ['latin'] });
+const dancing = Dancing_Script({
+  weight: '400',
+  subsets: ['latin'],
+});
 
 export const metadata = {
   title: 'Create Next App',
@@ -16,7 +19,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en'>
-      <body className={inter.className}>{children}</body>
+      <body className={`${dancing.className}`}>{children}</body>
     </html>
   );
 }

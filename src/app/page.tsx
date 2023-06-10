@@ -1,7 +1,7 @@
-import Info from '@/components/info';
-import Main from '@/components/main';
-import Menu from '@/components/menu';
-import Story from '@/components/story';
+import Info from '@src/components/info';
+import Main from '@src/components/main';
+import Menu from '@src/components/menu';
+import Story from '@src/components/story';
 
 export default function Home() {
   return (
