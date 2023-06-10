@@ -27,6 +27,7 @@
     "no-useless-catch": "off", // Turns off the rule that disallows unnecessary 'catch' clauses
     "react/function-component-definition": "off",
     "import/no-extraneous-dependencies": ["error", {"devDependencies": true}],
-    "import/prefer-default-export": "off"
+    "import/prefer-default-export": "off",
+    "no-nested-ternary": "off"
   }
 }
