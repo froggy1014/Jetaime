@@ -25,6 +25,8 @@
     "react/react-in-jsx-scope": "off", // Turns off the requirement to import 'React' in JSX
     "react/jsx-filename-extension": ["warn", { "extensions": [".ts", ".tsx"] }], // Allows .ts and .tsx file extensions for JSX files
     "no-useless-catch": "off", // Turns off the rule that disallows unnecessary 'catch' clauses
-    "react/function-component-definition": "off"
+    "react/function-component-definition": "off",
+    "import/no-extraneous-dependencies": ["error", {"devDependencies": true}],
+    "import/prefer-default-export": "off"
   }
 }
