@@ -1,8 +1,8 @@
-import { Dancing_Script } from 'next/font/google';
+import { Lato } from 'next/font/google';
 import '../styles/reset.css';
 import '../styles/globals.css';
 
-const dancing = Dancing_Script({
+const dancing = Lato({
   weight: '400',
   subsets: ['latin'],
 });
