@@ -84,3 +84,44 @@ export const modalSlideUp = {
     opacity: 0,
   },
 };
+
+export const textVariant = (delay: number) => ({
+  hidden: {
+    y: 50,
+    opacity: 0,
+  },
+  show: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      type: 'spring',
+      duration: 1.25,
+      delay,
+    },
+  },
+});
+
+export const textVariant2 = {
+  hidden: {
+    opacity: 0,
+    y: 20,
+  },
+  show: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      type: 'tween',
+      ease: 'easeIn',
+    },
+  },
+};
+
+export const textContainer = {
+  hidden: {
+    opacity: 0,
+  },
+  show: (i = 0.2) => ({
+    opacity: 1,
+    transition: { staggerChildren: 0.1, delayChildren: i * 0.01 },
+  }),
+};
