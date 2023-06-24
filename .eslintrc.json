@@ -30,6 +30,8 @@
     "import/prefer-default-export": "off",
     "no-nested-ternary": "off",
     "react/no-array-index-key": "off",
-    "react/require-default-props": "off"
+    "react/require-default-props": "off",
+    "react/button-has-type": "off",
+    "react/jsx-props-no-spreading": "off"
   }
 }
