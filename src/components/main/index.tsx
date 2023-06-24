@@ -13,7 +13,7 @@ const Main = () => {
     <motion.section
       initial='hidden'
       whileInView='show'
-      className='scroll relative flex h-full	w-full snap-center snap-always flex-col justify-center gap-6 bg-background px-4'
+      className='scroll relative flex h-full	w-full snap-center snap-always flex-col justify-center gap-4 bg-background px-4'
     >
       <div className='flex h-auto w-full flex-col items-center justify-center gap-4'>
         <motion.div variants={springUp(0.5)} className='mb-4'>
@@ -21,7 +21,10 @@ const Main = () => {
         </motion.div>
       </div>
 
-      <TypingText title='퓨전 치킨을 선보이는 천안 로컬 맛집' />
+      <TypingText
+        className='translate-y-[-24px]'
+        title='퓨전 치킨을 선보이는 천안 로컬 맛집'
+      />
 
       <motion.div variants={fadeIn('tween', 0.7, 0.5)}>
         <Image src='/image/main.png' alt='main' width={500} height={245} />
