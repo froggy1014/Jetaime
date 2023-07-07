@@ -59,13 +59,12 @@ const Menu = () => {
       whileInView='show'
       className='relative flex min-h-screen w-full snap-center snap-always flex-col items-center justify-around py-2'
     >
-      <motion.h1
-        variants={springUp(0.5)}
-        className='w-full text-center text-2xl'
-      >
-        Menu
+      <motion.div variants={springUp(0.5)}>
+        <h1 className='w-full pt-[20px] text-center text-3xl text-primary'>
+          Menu
+        </h1>
         <TypingText title='쥬뗌의 대표메뉴입니다.' />
-      </motion.h1>
+      </motion.div>
 
       <Swiper
         slidesPerView='auto'
@@ -74,7 +73,7 @@ const Menu = () => {
         pagination={{
           clickable: true,
         }}
-        className='h-[400px] w-1/2 bg-background'
+        className='h-[400px] w-1/2'
       >
         {Menus.map((menu, index) => (
           <SwiperSlide key={menu.src + index} className='flex flex-col'>
