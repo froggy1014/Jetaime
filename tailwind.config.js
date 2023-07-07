@@ -25,7 +25,22 @@ module.exports = {
         900: '#111827',
       },
     },
-    extend: {},
+    extend: {
+      keyframes: {
+        slide: {
+          '0%': {
+            transform: 'translateX(0)',
+          },
+          '100%': {
+            transform: 'translateX(calc(-340px*4))',
+          },
+        },
+      },
+      animation: {
+        leftslide: 'slide 14s linear infinite',
+        rightslide: 'slide 14s reverse infinite',
+      },
+    },
   },
   plugins: [],
 };

@@ -51,12 +51,12 @@ body {
 }
 
 .swiper-slide-prev {
-  transition: all 0.2s ease-in-out;
+  transition: all 0.4s ease-in-out;
   filter: grayscale(100%);
-  transform: scaleY(0.9) translateX(20px);
+  transform: scaleY(0.8) translateX(20px);
 }
 .swiper-slide-next {
-  transition: all 0.2s ease-in-out;
+  transition: all 0.4s ease-in-out;
   filter: grayscale(100%);
-  transform: scaleY(0.9) translateX(-20px);
+  transform: scaleY(0.8) translateX(-20px);
 }
