@@ -57,12 +57,10 @@ const Menu = () => {
       id='menu'
       initial='hidden'
       whileInView='show'
-      className='relative flex min-h-screen w-full snap-center snap-always flex-col items-center justify-around py-2'
+      className='relative flex min-h-screen w-full snap-center snap-always flex-col items-center justify-around py-4'
     >
       <motion.div variants={springUp(0.5)}>
-        <h1 className='w-full pt-[20px] text-center text-3xl text-primary'>
-          Menu
-        </h1>
+        <h1 className='w-full text-center text-3xl text-primary'>Menu</h1>
         <TypingText title='쥬뗌의 대표메뉴입니다.' />
       </motion.div>
 
@@ -76,7 +74,7 @@ const Menu = () => {
         className='h-[400px] w-1/2'
       >
         {Menus.map((menu, index) => (
-          <SwiperSlide key={menu.src + index} className='flex flex-col'>
+          <SwiperSlide key={menu.src + index} className='max-w-[314px]'>
             <Image src={menu.src} alt={menu.alt} fill className='rounded-3xl' />
             <div className='px-6 py-2'>
               <div className='flex w-full justify-between'>
@@ -89,7 +87,7 @@ const Menu = () => {
         ))}
       </Swiper>
 
-      <Button title='전체 메뉴 확인하기' className='mt-20' />
+      <Button title='전체 메뉴 확인하기' />
     </motion.section>
   );
 };

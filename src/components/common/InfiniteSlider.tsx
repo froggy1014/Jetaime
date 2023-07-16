@@ -7,7 +7,7 @@ interface Props {
 
 const InfiniteSlide = ({ dir = false }: Props) => {
   return (
-    <div className='relative m-auto h-[220px] w-auto overflow-hidden'>
+    <div className='m-auto h-[220px] w-auto overflow-hidden'>
       <div
         className={`flex w-[calc(340px*8)] gap-4 ${
           dir ? 'animate-rightslide' : 'animate-leftslide'
