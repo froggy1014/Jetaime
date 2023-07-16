@@ -19,7 +19,7 @@ body {
 
 .swiper {
   width: 100%;
-  height: auto;
+  height: 460px;
 }
 
 .swiper-slide {
@@ -51,12 +51,49 @@ body {
 }
 
 .swiper-slide-prev {
-  transition: all 0.4s ease-in-out;
+  transition: all 0.3s ease-in-out;
   filter: grayscale(100%);
-  transform: scaleY(0.8) translateX(20px);
+  transform: scaleY(0.9) translateX(20px) !important;
 }
 .swiper-slide-next {
-  transition: all 0.4s ease-in-out;
+  transition: all 0.3s ease-in-out;
   filter: grayscale(100%);
-  transform: scaleY(0.8) translateX(-20px);
+  transform: scaleY(0.9) translateX(-20px) !important;
+}
+
+.mapInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+.mapInfo > .logo {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.storeInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+}
+
+.storeInfo > .address {
+  font-size: 16px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #956A2E;
+}
+
+.storeInfo > a {
+  font-size: 14px;
+  color: #489DFD;
 }
