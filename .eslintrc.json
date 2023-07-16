@@ -19,7 +19,8 @@
     "next/core-web-vitals", // Extends Next.js core web vitals rules
     "plugin:@typescript-eslint/recommended", // Extends the recommended TypeScript rules
     "plugin:prettier/recommended", // Extends the rules to enable Prettier integration
-    "prettier" // Disables ESLint rules that conflict with Prettier
+    "prettier", // Disables ESLint rules that conflict with Prettier,
+    "next/core-web-vitals"
   ],
   "rules": {
     "react/react-in-jsx-scope": "off", // Turns off the requirement to import 'React' in JSX
@@ -32,6 +33,9 @@
     "react/no-array-index-key": "off",
     "react/require-default-props": "off",
     "react/button-has-type": "off",
-    "react/jsx-props-no-spreading": "off"
+    "react/jsx-props-no-spreading": "off",
+    "@next/next/no-sync-scripts": "off",
+    "@next/next/no-document-import-in-page": "off",
+    "@next/next/no-before-interactive-script-outside-document": "off"
   }
 }
